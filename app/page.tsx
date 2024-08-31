@@ -9,6 +9,7 @@ export default function Home() {
     <main className="min-h-screen p-24">
       <Loading/>
       <Hero/>
+      
     </main>
   );
 }

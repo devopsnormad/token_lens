@@ -59,9 +59,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-mt-8 pt-4 flex md:flex-row justify-between text-sm sm:text-base text-gray-400">
+        <div className="border-t mt-5 border-primary-mt-8 pt-4 flex md:flex-row justify-between text-sm sm:text-base text-gray-100">
           <p className="mb-6 md:mb-0">
-            Copyright © 2024 Blockfuse Labs . All Rights Reserved.{" "}
+            Copyright © 2024 TokenLens Team . All Rights Reserved.{" "}
           </p>
           <p>Powered by Blockfuse Labs Cohort One</p>
         </div>

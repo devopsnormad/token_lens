@@ -26,8 +26,13 @@ const config: Config = {
           800: "#4f189f",
           900: "#af90e6",
         }
-        
-      }
+      },
+      width: {
+        '400': '400px',  
+      },
+      height: {
+        '200': '200px',  
+      },
     },
   },
   plugins: [],

@@ -74,7 +74,7 @@ const DetailsModal = ({
           <div className="flex justify-center items-center my-5">
             <button
               onClick={close}
-              className="px-10 py-3 border text-sm font-bold"
+              className="px-10 py-3 border text-sm hover:bg-red-500 rounded font-bold"
             >
               Close
             </button>
@@ -95,7 +95,7 @@ const Page = () => {
   useEffect(() => {
     async function getTransfers() {
       // Replace the string with the actual API key or logic to fetch TRX transfers
-      const data = await fetchTransfers("YOUR_TRX_API_KEY_HERE");
+      const data = await fetchTransfers("YOUR_SHIB_API_KEY_HERE");
        //   const data = await fetchTransfers(`${apiKey}`); // uncomment once router is fixed
       if (data) {
         setTransfers(data.data.transfers);
@@ -119,11 +119,11 @@ const Page = () => {
     };
 
     return (
-      <div className="grid grid-cols-7 justify-between items-center">
+      <div className=" grid grid-cols-7 justify-between items-center">
         <div className="border h-10 flex items-center">
           <span
             onClick={handleDetails}
-            className="border p-2 mx-1 bg-red-500 cursor-pointer"
+            className="border p-2 mx-1 bg-blue-500 rounded cursor-pointer"
           >
             <IoEyeOutline />
           </span>
@@ -167,7 +167,7 @@ const Page = () => {
       <div>
         {/* Navbar */}
         <div>
-          {/* <h2>Transactions for TRX</h2> */}
+          {/* <h2>Transactions for SHIB</h2> */}
           <h2 className="text-3xl font-bold my-3">Transactions for SHIB</h2>
           <div className="grid grid-cols-7 justify-between thead">
             <div className="border h-10 flex justify-center items-center">

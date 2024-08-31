@@ -1,8 +1,8 @@
 "use client";
 import { fetchTransfers } from "@/Services/http";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { IoEyeOutline } from "react-icons/io5";
+
 const truncText = (str: string, length: number) => {
   if (str.length > length) {
     return str.slice(0, length) + "...";
@@ -70,7 +70,7 @@ const DetailsModal = ({
           <div className="flex justify-center items-center my-5">
             <button
               onClick={close}
-              className="px-10 py-3 border text-sm font-bold"
+              className="px-10 py-3 border text-sm font-bold hover:bg-red-500  rounded"
             >
               Close
             </button>

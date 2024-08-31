@@ -74,7 +74,7 @@ const DetailsModal = ({
           <div className="flex justify-center items-center my-5">
             <button
               onClick={close}
-              className="px-10 py-3 border text-sm font-bold"
+              className="px-10 py-3 border text-sm hover:bg-red-500 rounded font-bold"
             >
               Close
             </button>
@@ -123,7 +123,7 @@ const Page = () => {
         <div className="border h-10 flex items-center">
           <span
             onClick={handleDetails}
-            className="border p-2 mx-1 bg-red-500 cursor-pointer"
+            className="border p-2 mx-1 bg-blue-500 rounded cursor-pointer"
           >
             <IoEyeOutline />
           </span>
